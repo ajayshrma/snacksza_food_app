@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cpp"
+    tools:context=".fragments.todaymenufrag"
+    android:id="@+id/description"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/sf_black"
+                        android:id="@+id/setid_title"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColorHint="@color/card_color2"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:hint="#today menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="600dp">
+
+                    <LinearLayout
+                        android:weightSum="4"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/cairo_black"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="35sp"
+                            android:text="Dinner"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:background="@drawable/tdymnu"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp">
+
+                            <RelativeLayout
+                                android:layout_gravity="center"
+                                android:layout_width="140dp"
+                                android:layout_height="110dp">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="10dp"
+                                android:elevation="2dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="140dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:id="@+id/dinnerimage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#56ED9FE9" />
+                            </androidx.cardview.widget.CardView>
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/dinermenu"
+                                android:paddingLeft="4dp"
+                                android:fontFamily="@font/cairo_black"
+                                android:paddingTop="20dp"
+                                android:textColorHint="@color/black"
+                                android:textSize="20sp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:hint="Sabji , rayta, 5-chapati\nlussy , rayta, dal fry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                            <Button
+                                android:layout_marginBottom="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/white"
+                                android:text="3.5"
+                                android:textSize="15dp"
+                                android:background="#00C853"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+                            <Button
+                                android:id="@+id/gotodesc_menudinner"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="20dp"
+                                android:textColor="@color/white"
+                                android:background="@android:color/transparent"
+                                android:textSize="20dp"
+                                android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                              </RelativeLayout>
+
+                        <TextView
+                            android:fontFamily="@font/cairo_black"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="35sp"
+                            android:text="Lunch"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:background="@drawable/tdymnu"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+
+                                <RelativeLayout
+                                    android:layout_gravity="center"
+                                    android:layout_width="140dp"
+                                    android:layout_height="110dp">
+                                    <androidx.cardview.widget.CardView
+                                        app:cardCornerRadius="10dp"
+                                        android:elevation="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="140dp"
+                                        android:layout_marginLeft="12dp"
+                                        android:layout_height="110dp">
+
+                                        <ImageView
+                                            android:background="#56ED9FE9"
+                                            android:id="@+id/lunchimage"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"/>
+
+                                    </androidx.cardview.widget.CardView>
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:id="@+id/lunchmenu"
+                                    android:fontFamily="@font/cairo_black"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="20dp"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:hint="Sabji , rayta, 5-chapati\nlussy , rayta, dal fry"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+                            <Button
+                                android:layout_marginBottom="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/white"
+                                android:text="3.5"
+                                android:textSize="15dp"
+                                android:background="#00C853"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+                            <Button
+                                android:id="@+id/gotodesc_menulunch"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="20dp"
+                                android:textColor="@color/white"
+                                android:background="@android:color/transparent"
+                                android:textSize="20dp"
+                                android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
+

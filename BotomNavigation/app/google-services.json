@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "331333316115",
+    "firebase_url": "https://botomnavigation.firebaseio.com",
+    "project_id": "botomnavigation",
+    "storage_bucket": "botomnavigation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331333316115:android:ffefed252a79c9ffa599e6",
+        "android_client_info": {
+          "package_name": "com.ajayshrma.botomnavigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331333316115-ve602sjm41craclg9vhd8q9mes94pos9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ajayshrma.botomnavigation",
+            "certificate_hash": "b362afa64837b9fdd5ade46dbf61f5faf291dcdf"
+          }
+        },
+        {
+          "client_id": "331333316115-pctbsch95q4hctla20i2q1oin5icuq58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDghSDkYqfZz-Z2Oo8fh6eZSWltU06NMbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331333316115-pctbsch95q4hctla20i2q1oin5icuq58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cpp"
+    tools:context=".HomeFrag"
+    android:id="@+id/homefragment"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/spin_kit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="35dp"
+                    android:text="Hi, Ashvin"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:text="Select your plan and enjoy\na warm tiffin Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="4dp"
+                    android:background="#E91E63" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Your Subscription Plans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#285C0606"
+                android:elevation="5dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    app:cardBackgroundColor="#12FFFFFF"
+                    android:layout_height="120dp">
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_baseline_restaurant_menu_24"
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:id="@+id/pluss"
+                        android:textColor="@color/white"
+                       android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="25dp"
+                        android:text="Today \n Menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    app:cardBackgroundColor="#12FFFFFF"
+                    android:layout_height="120dp">
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_baseline_ballot_24"
+                        android:layout_width="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:id="@+id/customorderid"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text=" Order\nTimings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#285C0606"
+                android:elevation="5dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/myorderclick"
+                    android:layout_width="100dp"
+                    app:cardBackgroundColor="#12FFFFFF"
+                    android:layout_height="120dp">
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_baseline_list_alt_24"
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="25dp"
+                        android:text="   My\nOrders"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    app:cardBackgroundColor="#12FFFFFF"
+                    android:layout_height="120dp">
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_baseline_room_service_24"
+                        android:layout_width="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:id="@+id/twoday"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="25dp"
+                        android:text=" 2-Days\n   Trial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <TextView
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</FrameLayout>
+

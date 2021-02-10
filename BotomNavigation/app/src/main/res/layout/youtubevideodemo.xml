@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:id="@+id/ytdemo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.cardview.widget.CardView
+            android:elevation="5dp"
+            android:id="@+id/ytcardid"
+            app:cardBackgroundColor="@color/card_color2"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp"
+            android:layout_width="330dp"
+            android:layout_height="230dp">
+
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:videoId="S0Q4gqBUs7c"
+                android:layout_gravity="center"
+                app:autoPlay="false"
+                app:showFullScreenButton="true" >
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>

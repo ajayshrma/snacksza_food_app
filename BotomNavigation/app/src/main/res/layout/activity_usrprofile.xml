@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_weight="4"
+    tools:context=".activity.UsrprofileActivity">
+
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:paddingLeft="15dp"
+                android:text="Create Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:src="@drawable/accgif"
+                android:id="@+id/usrpic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <EditText
+                android:id="@+id/usr_nameid"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:maxLength="18"
+                android:textColor="#000000"
+                android:paddingBottom="8dp"
+                android:textColorHint="#99393535"
+                android:hint="Enter your Name"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/usr_account"
+                android:background="@drawable/accbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <EditText
+                android:id="@+id/usr_phone_noid"
+                android:layout_weight="0.5"
+                android:maxLength="10"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:textColorHint="#99393535"
+                android:hint="Your Whatsapp Number"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/call"
+                android:background="@drawable/accbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:id="@+id/spinner_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/udr"
+                android:paddingBottom="5dp"
+                android:text="Done"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:background="@drawable/donebtn"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

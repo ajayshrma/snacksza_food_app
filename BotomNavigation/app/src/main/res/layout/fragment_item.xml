@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="250dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/card_color1"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/itmfrag"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:fontFamily="@font/cairo_black"
+                    android:text="1 Meal"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/sub_validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/sf_bold"
+                    android:paddingBottom="40dp"
+                    android:text="Sabji , rayta, 5-chapati\nlussy , rayta, dal fry."
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/sub_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="70dp"
+                    android:text="1200 Rs."
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_black" />
+
+                <Button
+                    android:id="@+id/viewDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/verify"
+                    android:paddingBottom="5dp"
+                    android:hint="View Detail"
+                    android:textSize="12dp"
+                    android:textStyle="bold">
+                </Button>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/sub_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/ti" />
+
+
+
+</androidx.cardview.widget.CardView>

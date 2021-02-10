@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cpp"
+    tools:context=".fragments.Specialitem_Detailfrag"
+    android:id="@+id/special_item_fragid"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:background="@drawable/trans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="5dp"
+                        android:layout_centerInParent="true"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/special_item_rate_id"
+                            android:textColor="#ffffff"
+                            android:background="#FF0000"
+                            android:textSize="10dp"
+                            android:text="5%"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp" />
+
+
+                        <ImageView
+                            android:id="@+id/foodphtid"
+                            android:src="@drawable/kk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="125dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:fontFamily="@font/sf_bold"
+                        android:id="@+id/item_nameid"
+                        android:paddingTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:textSize="20sp"
+                        android:hint="Green Poha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/itemrateid"
+                        android:layout_alignParentBottom="true"
+                        android:paddingRight="40dp"
+                        android:layout_alignParentRight="true"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:hint="Rs. 50/-"
+                        android:fontFamily="@font/sf_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tiffin_noitemid"
+                        android:fontFamily="@font/sf_bold"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:hint="Tiffin: 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="You will get free of cost delivery \non your each and  every order."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="You have to provide different\n       tiffin box for Breakfast."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/timing_item_id"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="Timing: 7am-9am"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/continue_to_addres"
+                        android:paddingBottom="5dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:text="CONTINUE"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btncontinue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </Button>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>
+

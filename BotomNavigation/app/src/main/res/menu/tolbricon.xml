@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:background="http://schemas.android.com/apk/res-auto">
+
+    <item
+       android:title="Profile"
+        android:id="@+id/prf" />
+
+    <item
+        android:title="New offers"
+        android:id="@+id/ofer" />
+
+
+    <item
+        android:title="privacy policy"
+        android:id="@+id/plc" />
+
+    <item
+        android:title="App feedback"
+        android:id="@+id/fedbck"/>
+
+    <item
+        android:title="signOut"
+        android:id="@+id/signout"/>
+</menu>

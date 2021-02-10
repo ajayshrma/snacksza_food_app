@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cpp"
+    tools:context=".fragments.DescFragment"
+    android:id="@+id/descriptionfrag"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:background="@drawable/trans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backarrowbtn"
+                    android:background="@drawable/bek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="@font/sf_black"
+                    android:id="@+id/setid_title"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:hint="Standard Plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/sf_bold"
+        android:id="@+id/setid_validity"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:hint="Validity: 40 days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/setid_rate"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="40dp"
+            android:layout_alignParentRight="true"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="Rs. 2300/-"
+            android:fontFamily="@font/sf_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/setid_tiffins"
+            android:fontFamily="@font/sf_bold"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="50dp"
+            android:layout_alignParentLeft="true"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:hint="60 Tiffins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+
+
+            </LinearLayout>
+
+          <LinearLayout
+              android:weightSum="3"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="260dp">
+
+              <RelativeLayout
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+                      android:layout_centerInParent="true"
+                      android:textSize="18sp"
+                      android:textColor="@color/white"
+                      android:text="You will get free of cost delivery \non your each and  every order."
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+                      android:layout_centerInParent="true"
+                      android:textSize="18sp"
+                      android:textColor="@color/white"
+                      android:text="  Tiffin will deliver at specified time \n  according to lunch and dinner"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+                      android:layout_centerInParent="true"
+                      android:textSize="18sp"
+                      android:textColor="@color/white"
+                      android:text="Each tiffin consist of 5-6 \n    different food items"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+
+
+              </RelativeLayout>
+
+          </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+              <RelativeLayout
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <Button
+                      android:id="@+id/continue_to_addres"
+                      android:paddingBottom="5dp"
+                      android:textSize="13sp"
+                      android:textColor="@color/white"
+                      android:text="CONTINUE"
+                      android:layout_centerInParent="true"
+                      android:background="@drawable/btncontinue"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+                  </Button>
+
+
+
+              </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>
+
