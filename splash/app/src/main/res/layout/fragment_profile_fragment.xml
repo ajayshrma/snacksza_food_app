@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<TextView
+    android:gravity="center"
+    android:textColor="#000000"
+    android:text="Shopkeeper advertising Form"
+    android:layout_width="match_parent"
+    android:textSize="25dp"
+    android:layout_height="40dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <TextView
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:text="40%"
+                        android:gravity="center"
+                        android:background="#FF0000"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:layout_marginLeft="258dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/ic_add_black_24dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:weightSum="6">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:text="About this place"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+
+                        <EditText
+                            android:id="@+id/shop_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:hint=" Enter your Shope name"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:textColorHint="#000000"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:text="Average cost"
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
+
+                        <EditText
+                            android:id="@+id/Cost"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:hint="cost for massage- $700/-"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:text="Address"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="300dp"
+                            android:layout_height="35dp"
+                            android:hint="67-A Ravi PG Hostel ,Malviya nagar,jaipur rajasthan(313001)"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:text="Phone number"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/Number"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:hint="+91 7567438892 , 7372378710"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:text="Feel of the place"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/Shop_Detail"
+                            android:layout_width="350dp"
+                            android:layout_height="60dp"
+                            android:maxLines="2"
+                            android:hint="Silverine is jaipur's first Luxurious royal empre of beauty and they offer lavish beauty and wellness services by trained professions. "
+                            android:textColorHint="#000000"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <androidx.cardview.widget.CardView
+                    android:elevation="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:weightSum="6"
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="Timings"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                        <EditText
+                            android:id="@+id/timing"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp"
+                            android:hint="Mon - Sun  10AM - 8PM"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="Offer period"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+                        <EditText
+                            android:id="@+id/offer_period"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp"
+                            android:hint="30 july to 15Aug "
+                            android:layout_width="200dp"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="Payment option"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+                        <EditText
+                            android:id="@+id/payment_option"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp"
+                            android:hint="1.Cash  2.Cards Accepted  3. Wallets Accepted"
+                            android:layout_width="300dp"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:paddingLeft="8dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="Discount On"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+                        <EditText
+                            android:id="@+id/discount_on"
+                            android:textColorHint="#000000"
+                            android:textSize="10dp"
+                            android:hint="All type of Hair cutting and Spa's massage"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+    <Button
+        android:id="@+id/submit"
+        android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:hint="Submit"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/gradeint"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

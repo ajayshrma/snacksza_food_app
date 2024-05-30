@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context=".login_Activity.userinformationActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Want to see offers near you?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:text="Discount Mart needs your city name for enable you location services for this"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+       <ImageView
+           android:id="@+id/img"
+           android:layout_marginTop="30dp"
+           android:layout_gravity="center"
+           android:background="@drawable/map1"
+           android:layout_width="290dp"
+           android:layout_height="250dp" />
+    </LinearLayout>
+
+<Spinner
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout"
+        android:id="@+id/spin"
+        android:layout_width="250dp"
+        android:layout_height="22dp">
+</Spinner>
+    <TextView
+
+        android:textColor="#807e7e"
+        android:text="________________________________"
+        android:layout_below="@+id/spin"
+        android:layout_marginLeft="110dp"
+        android:layout_width="250dp"
+        android:layout_height="26dp" />
+    <Button
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:background="#f1f1f1"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</RelativeLayout>
